@@ -35,8 +35,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: build the docker image
         run: |
-          docker-compose up --build
-          docker-compose down --build
+          docker-compose up --build pythonapp
       - name: push docker image
         run: |
           docker push pythonapp
