@@ -38,5 +38,4 @@ jobs:
           docker-compose up --build pythonapp
       - name: push docker image
         run: |
-          docker push pythonapp
-          docker push postgres:11
+          docker push 8858729031/deploy
