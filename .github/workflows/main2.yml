@@ -36,6 +36,7 @@ jobs:
       - name: build the docker image
         run: |
           docker-compose up --build
+          docker-compose down --build
       - name: push docker image
         run: |
           docker push pythonapp
